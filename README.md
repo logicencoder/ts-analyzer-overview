@@ -4,7 +4,7 @@
 
 A television stream can look unstable for several different reasons: reception, tuning, transport errors or the content being carried. TS Analyzer brings those checks into one browser workspace, helping an operator move from choosing a satellite source to inspecting the arriving stream and retaining useful findings.
 
-The workspace keeps reception measurements separate from transport activity. An arriving stream does not automatically mean good radio reception, and an unavailable measurement stays unavailable. The featured capture shows an actual receiver transport stream; RF measurements are unavailable for that input.
+The workspace keeps reception measurements separate from transport activity. An arriving stream does not automatically mean good radio reception, and an unavailable measurement stays unavailable. The featured capture shows an actual current-TV transport stream with the receiver's real SNR, AGC and error readings.
 
 ## Tech stack
 
@@ -25,6 +25,8 @@ The results workspace collects transponder observations, television services and
 Saved findings can be loaded again, edited and exported as JSON for further analysis. The same workspace supports moving from a result into a closer transport inspection without re-entering its tuning details.
 
 ## Examine the transport stream
+
+On an Enigma2 receiver, **Analyze current TV** inspects the programme already being watched without changing the TV channel. Start or stop this input directly in the workspace. If the TV channel changes, analysis stops until started again. This provides a practical single-programme view; scanning a complete satellite transponder uses the separate SAT>IP input.
 
 Bring bitrate, active PIDs, continuity errors and timing observations together. The PID table shows the kinds of video, audio, signalling and other data actually being received. Service and programme details give those readings their content context when present in the source.
 
