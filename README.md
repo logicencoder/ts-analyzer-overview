@@ -6,6 +6,9 @@ A television stream can look unstable for several different reasons: reception, 
 
 The workspace keeps reception measurements separate from transport activity. An arriving stream does not automatically mean good radio reception, and an unavailable measurement stays unavailable. The featured capture shows a real SAT>IP stream from 23.5°E, with live receiver measurements, decoded services and arriving PIDs.
 
+
+Source selection and transport analysis answer different questions. Keeping the receiver context beside the programme and packet information helps the operator inspect the available stream without mistaking a display or demonstration for a measured RF signal.
+
 ## Tech stack
 
 | Layer | Technologies |
