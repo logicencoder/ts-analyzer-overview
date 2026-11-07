@@ -1,6 +1,6 @@
 # TS Analyzer
 
-![TS Analyzer inspecting an actual receiver transport stream](assets/transport-analysis.png)
+![TS Analyzer inspecting an actual receiver transport stream](assets/ts-analyzer-transport-analysis.png)
 
 A television stream can look unstable for several different reasons: reception, tuning, transport errors or the content being carried. TS Analyzer brings those checks into one browser workspace, helping an operator move from choosing a satellite source to inspecting the arriving stream and retaining useful findings.
 
@@ -21,11 +21,11 @@ Discover a SAT>IP receiver or choose one manually, then prepare the satellite po
 
 Start a full scan or check an individual transponder. Progress, lock observations and decoded channel names help narrow the next step. Stop controls make the investigation deliberate, and reconnecting to the workspace preserves the current scan's visible progress.
 
-![Satellite source selection and scan workspace in the running application](assets/scanner-workspace.png)
+![Satellite source selection and scan workspace in the running application](assets/ts-analyzer-scanner-workspace.png)
 
 The transponder workspace brings tuning entries into a searchable table. Review a source's frequency and reception settings together before choosing what to inspect next.
 
-![Transponder workspace in the running application](assets/transponder-workspace.png)
+![Transponder workspace in the running application](assets/ts-analyzer-transponder-workspace.png)
 
 ## Inspect the scan results
 
@@ -33,7 +33,7 @@ The results workspace collects transponder observations, television services and
 
 Saved findings can be loaded again, edited and exported as JSON for further analysis. The same workspace supports moving from a result into a closer transport inspection without re-entering its tuning details.
 
-![Results workspace in the running application](assets/results-workspace.png)
+![Results workspace in the running application](assets/ts-analyzer-results-workspace.png)
 
 ## Examine the transport stream
 
@@ -55,7 +55,7 @@ The constellation view accepts current external I/Q samples from compatible meas
 
 A standard SatPI transport stream does not provide the raw I/Q needed for this view. There is no generated constellation or artificial signal display to suggest otherwise.
 
-![Constellation workspace with no external I/Q source connected](assets/constellation-input.png)
+![Constellation workspace with no external I/Q source connected](assets/ts-analyzer-constellation-input.png)
 
 ## Work in a window that fits
 
@@ -63,13 +63,13 @@ Collapsible navigation and receiver controls leave more room for the measurement
 
 On a narrow screen, reception status and tuning controls stack above the stream details. Each PID retains its type, name, bitrate and error count in a readable vertical layout.
 
-<img src="assets/analyzer-mobile.png" alt="Live analyzer status and receiver measurements on a narrow screen" width="390">
+<img src="assets/ts-analyzer-analyzer-mobile.png" alt="Live analyzer status and receiver measurements on a narrow screen" width="390">
 
-<img src="assets/pids-mobile.png" alt="Live PID analysis with labelled fields on a narrow screen" width="390">
+<img src="assets/ts-analyzer-pids-mobile.png" alt="Live PID analysis with labelled fields on a narrow screen" width="390">
 
 Settings select the analyzer's input. Local DVB tuning is not currently implemented; the interface makes that limitation explicit instead of silently treating it as a network receiver.
 
-![Input and analysis settings in the running application](assets/settings-workspace.png)
+![Input and analysis settings in the running application](assets/ts-analyzer-settings-workspace.png)
 
 ---
 
